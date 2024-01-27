@@ -114,6 +114,9 @@ $i::
     else if (accent = "trema") {
         SendKeyRespect("ï", "Ï")
     }
+    else if (accent = "cedilla") {
+        SendKeyRespect("»", "›")
+    }
     else {
         SendKeyRespect("i", "I")
     }
@@ -141,6 +144,9 @@ $u::
     else if (accent = "trema") {
         SendKeyRespect("ü", "Ü")
     }
+    else if (accent = "cedilla") {
+        SendKeyRespect("«", "‹")
+    }
     else {
         SendKeyRespect("u", "U")
     }
@@ -167,6 +173,8 @@ return
     5 & o::SendKeyRespect("œ", "Œ")
     5 & a::SendKeyRespect("æ", "Æ")
     5 & c::SendKeyRespect("ç", "Ç")
+    5 & u::SendKeyRespect("«", "‹")
+    5 & i::SendKeyRespect("»", "›")
 
 #If
 
